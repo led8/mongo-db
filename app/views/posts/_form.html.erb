@@ -11,14 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
+  <div class="ui input margin">
+    <%= form.label :title, class: "input-margin" %>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+  <div class="ui input margin">
+    <%= form.label :body, class: "input-margin" %>
+    <%= form.text_field :body %>
+  </div>
+
+  <div class="ui input margin">
+    <%= form.label :url, class: "input-margin" %>
+    <%= form.text_field :url %>
   </div>
 
   <div class="actions">

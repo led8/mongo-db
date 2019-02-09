@@ -1,10 +1,15 @@
+html {
+  height: 100%;
+}
+
 body {
-  background-color: #fff;
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  background-attachment: fixed;
+  background: radial-gradient(#A1FFCE, #FAFFD1);
 }
 
 p, ol, ul, td {
@@ -21,14 +26,13 @@ pre {
 
 a {
   color: #000;
-
-  &:visited {
-    color: #666;
-  }
-
+  padding: 10px;
   &:hover {
-    color: #fff;
-    background-color: #000;
+    background-color: rgba(191, 191, 191, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
   }
 }
 
@@ -41,13 +45,15 @@ td {
 }
 
 div {
-  &.field, &.actions {
-    margin-bottom: 10px;
+  &.margin, &.actions {
+    margin: 10px;
   }
 }
 
-#notice {
-  color: green;
+.input-margin {
+  margin-right: 10px;
+  margin-top: 8px;
+  font-weight: bold;
 }
 
 .field_with_errors {
