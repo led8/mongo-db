@@ -1,0 +1,15 @@
+<%= simple_form_for [@post, @review] do |form| %>
+    <div class="ui input margin">
+      <%= form.label :title, class: "input-margin" %>
+      <%= form.text_field :title %>
+    </div>
+
+    <div class="ui input margin">
+      <%= form.label :content, class: "input-margin" %>
+      <%= form.text_field :content %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+<% end %>

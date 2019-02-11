@@ -2,6 +2,7 @@ class Post
   include Mongoid::Document
   include Mongoid::Timestamps
   include ActiveModel::Validations
+  has_many :reviews, dependent: :delete_all
 
   field :title, type: String
   field :body, type: String
