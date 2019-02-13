@@ -30,6 +30,8 @@ gem 'jquery-rails'
 gem 'mongoid', '~> 7.0'
 gem 'semantic-ui-sass'
 gem 'simple_form'
+gem 'mongo'
+gem 'bson_ext'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

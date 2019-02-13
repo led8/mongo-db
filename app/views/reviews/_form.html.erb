@@ -1,15 +1,15 @@
 <%= simple_form_for [@post, @review] do |form| %>
-    <div class="ui input margin">
-      <%= form.label :title, class: "input-margin" %>
-      <%= form.text_field :title %>
-    </div>
+  <div class="ui input margin">
+    <%= form.label :title, error: 'Title is mandatoy, please specifiy one', class: "input-margin" %>
+    <%= form.text_field :title %>
+  </div>
 
-    <div class="ui input margin">
-      <%= form.label :content, class: "input-margin" %>
-      <%= form.text_field :content %>
-    </div>
+  <div class="ui input margin">
+    <%= form.label :content, error: 'Content is mandatory, please specify one' class: "input-margin" %>
+    <%= form.text_field :content %>
+  </div>
 
-    <div class="actions">
-      <%= form.submit %>
-    </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>
